@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>height, width, borders and backgrounds</title>
+    <style>
+        #imgPara{
+            height:95px;
+            width:95px;
+            background-image:url('https://www.codewithharry.com/_next/image/?url=%2Fimg%2Flogo-blue.png&w=96&q=75');
+            border-width:2px;
+            border-color:green;
+            border-style:solid;
+            border-radius:0px;
+        }
+        #firstPara{
+            background-color:red;
+            height: 20px;
+            width: 80px;
+            border-width: 2px;
+            border-color:green;/*default color is black*/
+            border-style: solid;
+            /* border-radius smoothens the edges of the border */
+            border-radius:10px;
+        }
+        #secondPara{
+            background-color: skyblue;
+            height:20px;
+            width:80px;
+            border-top:2px solid greenyellow;
+            border-right:2px solid pink;
+            border-bottom:2px solid blue;
+            border-left:2px solid violet;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        #thirdPara{
+            height: 300px;
+            width: 400px;
+            background-image: url('https://www.codewithharry.com/_next/image/?url=%2Fimg%2Flogo-blue.png&w=96&q=75');
+            border-width: 10px blue;
+            border-style:solid;
+            border-radius:10px;
+            background-repeat:no-repeat;/*stopsthe image from repeating*//*repeat-x makes the image repeat along x*/
+            background-position: center center;
+            /* background-position: center top;
+            background-position: 12px center; */
+
+        }
+    </style>
+</head>
+<body>
+    <p id="imgPara"></p>
+    <h3>height, width, borders and backgrounds</h3>
+    <p id="firstPara">this is para1</p>
+    <p id="secondPara">this is para2</p>  
+    <p id="thirdPara">this is third para</p>  
+</body>
+</html>

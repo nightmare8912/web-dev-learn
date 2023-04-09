@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        /* * is the universal selector */
+        *{
+            padding: 0px;
+            margin: 0px;
+            /*it will make the width constant*/
+            box-sizing: border-box;
+        }
+        .container{
+            background-color:skyblue;
+            border: 3px solid #008000;
+            padding: 100px; 
+            /*we can cet padding for only top and bottom also*/
+            /* padding-top:30px; */
+            /* or we can set padding for top, bottom, left and right using */
+            /* padding: 10px 20px 30px 40px; */
+            /* to give same padding for top/bottom and left/right */
+            /* padding :y(top/bottom) x(left/right); */
+            margin:30px 40px; 
+            border-radius:23px;
+            width:100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p id="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ipsum natus repudiandae? Ab facilis maiores, illo blanditiis sit dolores neque inventore commodi praesentium?</p>
+    </div>
+    <div class="container">
+        <p id="two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ipsum natus repudiandae? Ab facilis maiores, illo blanditiis sit dolores neque inventore commodi praesentium?</p>
+    </div>
+    <div class="container">
+        <p id="three">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ipsum natus repudiandae? Ab facilis maiores, illo blanditiis sit dolores neque inventore commodi praesentium?</p>
+    </div>
+    <div class="container">
+        <p id="four">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ipsum natus repudiandae? Ab facilis maiores, illo blanditiis sit dolores neque inventore commodi praesentium?</p>
+    </div>
+</body>
+</html>

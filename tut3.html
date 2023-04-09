@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <h2>This is form tutorial</h2>
+    <!-- used to link this form to backend -->
+    <form action="backend.php">
+        <!-- name attribute helps php to recognize the value in that textfield -->
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" name="myName" id="name"><br>  
+        </div>
+        <br>
+        <div>
+            Role: <input type="text" name="myRole"><br>
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myMail">
+        </div>         
+        <br>
+        <div>
+            Date: <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            Number: <input type="number" name="myNumber">
+        </div>
+        <br>
+        <div>
+            Gender: <input type="radio" name="myGender"> Male
+            <input  type="radio" name="myGender">Female  
+        </div>
+        <br>
+        <div>
+            <label for="cars">Cars</label>
+            <select name="myCars" id="cars">
+                <option value="nsa">--Not Selected--</option>
+                <option value="ind">Indica</option>
+                <option value="swf">Swift</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            Write about yourself:<br><textarea rows="10" cols="30" name="myTextArea" placeholder="Write here"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" name="TermsCHK" id="terms">
+            <label for="terms">I have read and agree to the terms and conditions</label>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="SUBMIT FORM">
+            <input type="reset" value="RESET">
+        </div>
+    </form>
+</body>
+</html>

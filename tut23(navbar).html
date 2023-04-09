@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        .navbar{
+            background-color: black;
+            border-radius: 30px;
+        }
+        /* all the li's inside navbar class */
+        .navbar li{
+            float: left;
+            padding: 25px 10px;
+            
+            list-style: none;/*to remove bullets*/
+        }
+        .navbar ul{
+            overflow:auto;/*since after floating, the elements overflow from their parent, so bg color becomes invisible, to make it visible, we write this*/
+            margin: 0px 0px;
+        }
+        .navbar a{
+            text-decoration: none;
+            /* font-color:maroon; */
+            color: white;
+            padding: 10px;
+            border-radius:100px;
+        }
+        .navbar a:hover{
+            color:rgb(135, 211, 28);
+            background-color: blue;
+        }
+        .search{
+            color:white;
+            float: right;
+            margin: 10px;
+            /* padding: 5px; */
+        }
+        .navbar input{
+            color: black;
+            border-radius: 30px;
+            border: 2-x solid black;
+            width: 200px;
+            height: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="search">
+                        <input type="text" class="search" id="search" placeholder="Search here...">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
